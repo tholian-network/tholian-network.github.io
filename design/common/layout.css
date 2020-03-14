@@ -1,0 +1,126 @@
+
+::selection {
+	color: var(--element-select-color);
+	border-radius: 4px;
+	background: var(--element-select-background);
+	cursor: text;
+}
+
+::-moz-selection {
+	color: var(--element-select-color);
+	border-radius: 4px;
+	background: var(--element-select-background);
+	cursor: text;
+}
+
+::-webkit-scrollbar {
+	width: 16px;
+	border: 0px solid transparent;
+	background: var(--scrollbar-default-background);
+}
+
+::-webkit-scrollbar-thumb {
+	width: 16px;
+	border: 0px solid transparent;
+	border-radius: 2px;
+	background: var(--scrollbar-default-color);
+}
+
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+body > article {
+	display: block;
+	width: 640px;
+	margin: 64px auto 0px auto;
+	padding: 16px;
+	font-family: 'museo';
+	font-size: 16px;
+	background: var(--surface-default-background);
+	border: 1px solid var(--surface-default-color);
+	border-radius: 8px;
+	box-sizing: border-box;
+}
+
+body > article h3 {
+	margin: 0px 0px 16px 0px;
+	padding: 0px;
+	font-family: 'crystalline';
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 32px;
+	text-transform: uppercase;
+	border-bottom: 1px solid var(--surface-default-color);
+}
+
+body > article p {
+	margin: 0px 0px 16px 0px;
+	font-family: 'museo';
+	font-size: 16px;
+	text-align: justify;
+}
+
+body > article code {
+	display: block;
+	margin: 0px;
+	padding: 4px;
+	font-family: 'vera-mono';
+	color: var(--layout-default-color);
+	background: var(--layout-default-background);
+	border-radius: 4px;
+}
+
+body > article table {
+	width: 100%;
+	text-align: center;
+}
+
+body > article p + table {
+	margin-top: 32px;
+}
+
+body > article table th {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'crystalline';
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 32px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+body > article table td {
+	margin: 0px;
+	padding: 8px 8px;
+	font-size: 16px;
+	line-height: 16px;
+	font-family: 'museo';
+	border-top: 1px solid var(--surface-default-color);
+}
+
+body > footer {
+	display: block;
+	width: 100%;
+	margin: 64px 0px 0px 0px;
+	padding: 16px;
+	font-family: 'museo';
+	text-align: center;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+	body > article {
+		width: auto;
+	}
+
+}
+
