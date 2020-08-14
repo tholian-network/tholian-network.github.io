@@ -165,12 +165,30 @@ section > article {
 	box-sizing: border-box;
 }
 
+section > article > figure {
+	display: block;
+	position: absolute;
+	width: 640px;
+	height: 256px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
 section > article:nth-of-type(odd) {
-	margin-left: 32px;
+	transform: translate(-50%);
+}
+
+section > article:nth-of-type(odd) > figure {
+	transform: translate(100%);
 }
 
 section > article:nth-of-type(even) {
-	margin-right: 32px;
+	transform: translate(50%);
+}
+
+section > article:nth-of-type(even) > figure {
+	transform: translate(calc(-100% - 32px));
 }
 
 section > article h3 {
@@ -243,6 +261,33 @@ main > footer {
 
 
 
+@media screen and (max-width: 1300px) {
+
+	section > article:nth-of-type(odd) {
+		transform: unset;
+	}
+
+	section > article:nth-of-type(even) {
+		transform: unset;
+	}
+
+	section > article > figure {
+		position: static;
+		width: auto;
+	}
+
+	section > article:nth-of-type(odd) > figure {
+		margin: 64px auto;
+		transform: unset;
+	}
+
+	section > article:nth-of-type(even) > figure {
+		margin: 64px auto;
+		transform: unset;
+	}
+
+}
+
 @media screen and (max-width: 672px) {
 
 	header {
@@ -255,14 +300,6 @@ main > footer {
 
 	section > article {
 		width: auto;
-	}
-
-	section > article:nth-of-type(odd) {
-		margin-left: auto;
-	}
-
-	section > article:nth-of-type(even) {
-		margin-right: auto;
 	}
 
 }

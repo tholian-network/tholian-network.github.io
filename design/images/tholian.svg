@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-	<g fill="#ffffff">
-		<path d="m303 221-15-26 63-37v-86l-52-51 21-21 61 60v116z"/>
-		<path d="m394 243h-104v-30h91l52-54v-91h30v103z"/>
-		<path d="m321 513-22-21 52-55v-84l-59-28 13-27 76 36v115z"/>
-		<path d="m463 445h-30v-91l-52-54h-77v-30h89l69 72z"/>
+<svg version="1.1" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+	<g fill="transparent" stroke="#ffffff" stroke-linejoin="round" stroke-width="8">
+		<path d="M 50 155 l 62 36 l 0 40 l -92 -56 l 0 -84 l 108 -76 l 108 76 l 0 84 l -92 56 l 0 -40 l 62 -36"/>
 	</g>
-	<g fill="#ffffff" transform="matrix(-1,0,0,1,511,0)">
-		<path d="m303 221-15-26 63-37v-86l-52-51 21-21 61 60v116z"/>
-		<path d="m394 243h-104v-30h91l52-54v-91h30v103z"/>
-		<path d="m321 513-22-21 52-55v-84l-59-28 13-27 76 36v115z"/>
-		<path d="m463 445h-30v-91l-52-54h-77v-30h89l69 72z"/>
+	<g fill="#ffffff" stroke="#ffffff" stroke-linejoin="round" stroke-width="8">
+		<polygon points="54,122 112,142 54,98"/>
+		<polygon points="200,122 144,142 200,98"/>
 	</g>
-	<circle fill="#ffffff" cx="256" cy="288" r="68"/>
-	<circle fill="#ffffff" cx="256" cy="196" r="48"/>
 </svg>
+
