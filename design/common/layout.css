@@ -29,14 +29,133 @@
 
 
 body {
+	display: block;
 	margin: 0px;
 	padding: 0px;
+	color: var(--layout-default-color);
+	background: var(--layout-default-background);
 }
 
-body > article {
+aside {
+	position: fixed;
+	display: block;
+	top: 0px;
+	right: 0px;
+	bottom: auto;
+	left: 0px;
+	margin: 0px;
+	padding: 16px;
+	text-align: right;
+	background: var(--surface-default-foreground);
+	z-index: 1024;
+}
+
+main {
+	position: fixed;
+	top: 64px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	overflow: scroll;
+	z-index: 0;
+}
+
+aside ul {
+	display: block;
+	margin: 0px 64px 0px 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+aside ul li {
+	display: inline-block;
+}
+
+aside a {
+	padding: 0px 4px;
+	font-family: 'crystalline';
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 32px;
+}
+
+aside button[data-action="login"] {
+	position: fixed;
+	top: 16px;
+	right: 16px;
+	bottom: auto;
+	left: auto;
+	color: var(--element-active-color);
+}
+
+aside button[data-action="login"]:before {
+	content: '\e8e1';
+}
+
+header {
+	display: block;
+	width: 512px;
+	height: auto;
+	margin: 0px auto;
+	padding: 256px 0px;
+	box-sizing: content-box;
+}
+
+header img {
+	display: block;
+	width: 128px;
+	height: 128px;
+	margin: 0px auto 32px auto;
+	padding: 0px;
+	border: 0px solid transparent;
+}
+
+header h1 {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'crystalline';
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 64px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+header h2 {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'crystalline';
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 32px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+header p {
+	display: block;
+	width: 512px;
+	margin: 0px auto 16px auto;
+	font-family: 'museo';
+	font-size: 20px;
+	font-weight: normal;
+	text-align: justify;
+}
+
+header p:nth-of-type(1) {
+	margin-top: 64px;
+}
+
+
+
+section > article {
 	display: block;
 	width: 640px;
-	margin: 64px auto 0px auto;
+	margin: 64px auto 256px auto;
 	padding: 16px;
 	font-family: 'museo';
 	font-size: 16px;
@@ -46,7 +165,15 @@ body > article {
 	box-sizing: border-box;
 }
 
-body > article h3 {
+section > article:nth-of-type(odd) {
+	margin-left: 32px;
+}
+
+section > article:nth-of-type(even) {
+	margin-right: 32px;
+}
+
+section > article h3 {
 	margin: 0px 0px 16px 0px;
 	padding: 0px;
 	font-family: 'crystalline';
@@ -57,14 +184,14 @@ body > article h3 {
 	border-bottom: 1px solid var(--surface-default-color);
 }
 
-body > article p {
+section > article p {
 	margin: 0px 0px 16px 0px;
 	font-family: 'museo';
-	font-size: 16px;
+	font-size: 20px;
 	text-align: justify;
 }
 
-body > article code {
+section > article code {
 	display: block;
 	margin: 0px;
 	padding: 4px;
@@ -74,16 +201,16 @@ body > article code {
 	border-radius: 4px;
 }
 
-body > article table {
+section > article table {
 	width: 100%;
 	text-align: center;
 }
 
-body > article p + table {
+section > article p + table {
 	margin-top: 32px;
 }
 
-body > article table th {
+section > article table th {
 	margin: 0px;
 	padding: 0px;
 	font-family: 'crystalline';
@@ -94,7 +221,7 @@ body > article table th {
 	text-transform: uppercase;
 }
 
-body > article table td {
+section > article table td {
 	margin: 0px;
 	padding: 8px 8px;
 	font-size: 16px;
@@ -103,7 +230,7 @@ body > article table td {
 	border-top: 1px solid var(--surface-default-color);
 }
 
-body > footer {
+main > footer {
 	display: block;
 	width: 100%;
 	margin: 64px 0px 0px 0px;
@@ -116,10 +243,26 @@ body > footer {
 
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 672px) {
 
-	body > article {
+	header {
 		width: auto;
+	}
+
+	header p {
+		width: auto;
+	}
+
+	section > article {
+		width: auto;
+	}
+
+	section > article:nth-of-type(odd) {
+		margin-left: auto;
+	}
+
+	section > article:nth-of-type(even) {
+		margin-right: auto;
 	}
 
 }
