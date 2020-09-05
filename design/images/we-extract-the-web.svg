@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg version="1.1" viewBox="0 0 512 256" xmlns="http://www.w3.org/2000/svg">
 	<rect fill="transparent" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" x="160" y="2" width="192" height="252"/>
-	<g fill="#ffffff" transform="translate(160 0)">
-		<rect x="16" y="24" width="160" height="16"/>
-		<rect x="16" y="64" width="160" height="8"/>
-		<rect x="16" y="80" width="160" height="8"/>
-		<rect x="96" y="96" width="80" height="8"/>
-		<rect x="96" y="112" width="80" height="8"/>
-		<rect x="96" y="128" width="80" height="8"/>
-		<rect x="96" y="144" width="80" height="8"/>
-		<rect x="16" y="160" width="160" height="8"/>
-		<rect x="16" y="176" width="160" height="8"/>
-		<rect x="16" y="192" width="80" height="8"/>
-		<rect x="16" y="208" width="80" height="8"/>
-		<rect x="16" y="224" width="80" height="8"/>
+	<g>
+		<rect fill="#ffffff" x="176" y="24" width="160" height="16"/>
+		<circle fill="#ffffff" cx="480" cy="32" r="12"/>
+		<path fill="transparent" stroke="#ffffff" stroke-dasharray="0 16" stroke-linecap="round" stroke-width="8" d="M264 32 l 208 0"/>
 	</g>
-	<circle fill="#ffffff" cx="32" cy="128" r="16"/>
-	<path fill="transparent" stroke="#ffffff" stroke-dasharray="0 16" stroke-linecap="round" stroke-width="8" d="M64 128 l 96 0"/>
-	<circle fill="#ffffff" cx="32" cy="208" r="16"/>
-	<path fill="transparent" stroke="#ffffff" stroke-dasharray="0 16" stroke-linecap="round" stroke-width="8" d="M64 208 l 96 0"/>
-	<circle fill="#ffffff" cx="480" cy="32" r="16"/>
-	<path fill="transparent" stroke="#ffffff" stroke-dasharray="0 16" stroke-linecap="round" stroke-width="8" d="M368 32 l 96 0"/>
-	<circle fill="#ffffff" cx="480" cy="128" r="16"/>
-	<path fill="transparent" stroke="#ffffff" stroke-dasharray="0 16" stroke-linecap="round" stroke-width="8" d="M368 128 l 96 0"/>
+	<g>
+		<rect fill="#ffffff" x="176" y="64" width="160" height="8"/>
+		<rect fill="#ffffff" x="176" y="80" width="160" height="8"/>
+		<rect fill="#ffffff" x="256" y="96" width="80" height="8"/>
+		<rect fill="#ffffff" x="256" y="112" width="80" height="8"/>
+		<rect fill="#ffffff" x="256" y="128" width="80" height="8"/>
+		<rect fill="#ffffff" x="256" y="144" width="80" height="8"/>
+		<rect fill="#ffffff" x="176" y="160" width="160" height="8"/>
+		<rect fill="#ffffff" x="176" y="176" width="160" height="8"/>
+		<rect fill="#ffffff" x="176" y="192" width="80" height="8"/>
+		<rect fill="#ffffff" x="176" y="208" width="80" height="8"/>
+		<rect fill="#ffffff" x="176" y="224" width="80" height="8"/>
+		<circle fill="#ffffff" cx="480" cy="132" r="12"/>
+		<path fill="transparent" stroke="#ffffff" stroke-dasharray="0 16" stroke-linecap="round" stroke-width="8" d="M296 132 l 160 0"/>
+	</g>
+	<g>
+		<rect fill="transparent" stroke="#22ccff" stroke-width="4" stroke-linejoin="round" x="178" y="98" width="70" height="52"/>
+		<circle fill="#22ccff" cx="32" cy="126" r="12"/>
+		<path fill="transparent" stroke="#22ccff" stroke-linecap="round" stroke-width="8" d="M32 126 m 24 0 l 152 0"/>
+	</g>
+	<g>
+		<rect fill="transparent" stroke="transparent" stroke-width="4" stroke-linejoin="round" x="264" y="194" width="70" height="36"/>
+		<circle fill="#ffffff" cx="32" cy="212" r="12"/>
+		<path fill="transparent" stroke="#ffffff" stroke-dasharray="0 16" stroke-linecap="round" stroke-width="8" d="M32 212 m 24 0 l 244 0"/>
+	</g>
 </svg>
 
