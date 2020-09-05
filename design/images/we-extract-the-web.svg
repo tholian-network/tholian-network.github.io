@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 512 256" xmlns="http://www.w3.org/2000/svg">
+	<rect fill="transparent" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" x="160" y="2" width="192" height="252"/>
+	<g fill="#ffffff" transform="translate(160 0)">
+		<rect x="16" y="24" width="160" height="16"/>
+		<rect x="16" y="64" width="160" height="8"/>
+		<rect x="16" y="80" width="160" height="8"/>
+		<rect x="96" y="96" width="80" height="8"/>
+		<rect x="96" y="112" width="80" height="8"/>
+		<rect x="96" y="128" width="80" height="8"/>
+		<rect x="96" y="144" width="80" height="8"/>
+		<rect x="16" y="160" width="160" height="8"/>
+		<rect x="16" y="176" width="160" height="8"/>
+		<rect x="16" y="192" width="80" height="8"/>
+		<rect x="16" y="208" width="80" height="8"/>
+		<rect x="16" y="224" width="80" height="8"/>
+	</g>
+	<circle fill="#ffffff" cx="32" cy="128" r="16"/>
+	<path fill="transparent" stroke="#ffffff" stroke-dasharray="0 16" stroke-linecap="round" stroke-width="8" d="M64 128 l 96 0"/>
+	<circle fill="#ffffff" cx="32" cy="208" r="16"/>
+	<path fill="transparent" stroke="#ffffff" stroke-dasharray="0 16" stroke-linecap="round" stroke-width="8" d="M64 208 l 96 0"/>
+	<circle fill="#ffffff" cx="480" cy="32" r="16"/>
+	<path fill="transparent" stroke="#ffffff" stroke-dasharray="0 16" stroke-linecap="round" stroke-width="8" d="M368 32 l 96 0"/>
+	<circle fill="#ffffff" cx="480" cy="128" r="16"/>
+	<path fill="transparent" stroke="#ffffff" stroke-dasharray="0 16" stroke-linecap="round" stroke-width="8" d="M368 128 l 96 0"/>
+</svg>
+
