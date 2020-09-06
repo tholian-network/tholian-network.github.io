@@ -9,23 +9,23 @@
 	stroke: #22ccff;
 }
 
-#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(2) { transition-delay:  500ms; }
-#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(3) { transition-delay: 1000ms; }
-#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(4) { transition-delay: 1500ms; }
-#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(5) { transition-delay: 2000ms; }
-#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(6) { transition-delay: 2500ms; }
-#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(7) { transition-delay: 3000ms; }
-#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(8) { transition-delay: 3500ms; }
-#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(9) { transition-delay: 4000ms; }
+#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(2) { transition-delay: 100ms; }
+#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(3) { transition-delay: 200ms; }
+#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(4) { transition-delay: 300ms; }
+#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(5) { transition-delay: 400ms; }
+#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(6) { transition-delay: 500ms; }
+#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(7) { transition-delay: 600ms; }
+#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(8) { transition-delay: 700ms; }
+#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(9) { transition-delay: 800ms; }
 
 #we-uncover-the-web svg:hover g:nth-of-type(2) circle {
 	fill: #22ccff;
-	transition-delay: 4500ms;
+	transition-delay: 900ms;
 }
 
 #we-uncover-the-web svg:hover g:nth-of-type(2) path {
 	stroke: #22ccff;
-	transition-delay: 4500ms;
+	transition-delay: 900ms;
 }
 
 #we-extract-the-web svg circle,

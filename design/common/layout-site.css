@@ -13,7 +13,10 @@ aside {
 	left: 0px;
 	margin: 0px;
 	padding: 16px;
+	width: 100%;
+	height: 64px;
 	background: var(--surface-default-foreground);
+	box-sizing: border-box;
 	z-index: 1024;
 }
 
@@ -49,17 +52,18 @@ aside a {
 	line-height: 32px;
 }
 
-aside button[data-action="login"] {
+aside button[data-action="radar"] {
 	position: fixed;
-	padding: 0px 8px;
 	top: 16px;
 	right: 16px;
 	bottom: auto;
 	left: auto;
+	padding: 0px 8px;
+	content: 'Radar';
 	color: var(--element-active-color);
 }
 
-aside button[data-action="login"]:before {
+aside button[data-action="radar"]:before {
 	display: inline;
 	margin: 0px 4px 0px 0px;
 	content: '\e8e1';
@@ -124,42 +128,54 @@ header p:nth-of-type(1) {
 }
 
 section > article {
-	width: calc(50% - 64px);
+	width: 544px;
 	margin: 64px auto 256px auto;
 	min-height: 288px;
 }
 
-section > article figure {
+section > article > figure {
 	display: block;
 	position: absolute;
-	width: calc(100%);
+	width: 512px;
 	height: 256px;
 	margin: 0px;
 	padding: 0px;
 	text-align: center;
+	user-select: none;
+}
+
+section > article figure > svg {
+	display: block;
+	width: 512px;
+	height: 256px;
+	user-select: none;
 }
 
 section > article:nth-of-type(odd) {
 	transform: translate(-50%);
 }
 
-section > article:nth-of-type(odd) figure {
-	transform: translate(100%, -49px);
+section > article:nth-of-type(odd) > figure {
+	transform: translate(calc(100% + 32px), -49px);
 }
 
 section > article:nth-of-type(even) {
 	transform: translate(50%);
 }
 
-section > article:nth-of-type(even) figure {
+section > article:nth-of-type(even) > figure {
 	transform: translate(calc(-100% - 32px), -49px);
 }
 
 
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1152px) {
 
 	section > article:nth-of-type(odd) {
+		transform: unset;
+	}
+
+	section > article:nth-of-type(odd) > figure {
 		transform: unset;
 	}
 
@@ -167,24 +183,45 @@ section > article:nth-of-type(even) figure {
 		transform: unset;
 	}
 
+	section > article:nth-of-type(even) > figure {
+		transform: unset;
+	}
+
 	section > article > figure {
 		position: static;
-		width: auto;
-	}
-
-	section > article:nth-of-type(odd) figure {
+		width: 512px;
 		margin: 64px auto;
-		transform: unset;
-	}
-
-	section > article:nth-of-type(even) figure {
-		margin: 64px auto;
-		transform: unset;
 	}
 
 }
 
-@media screen and (max-width: 800px) {
+
+
+@media screen and (max-width: 560px) {
+
+	aside {
+		overflow-x: auto;
+		overflow-y: hidden;
+	}
+
+	aside button[data-action="radar"] {
+		top: auto;
+		right: auto;
+		bottom: 0px;
+		left: 0px;
+		background: var(--surface-default-foreground);
+		z-index: 1024;
+	}
+
+	aside button[data-action="radar"]:before {
+		margin: 0px;
+	}
+
+	aside ul {
+		width: fit-content;
+		margin: 0px;
+		white-space: nowrap;
+	}
 
 	header {
 		width: auto;
@@ -192,6 +229,20 @@ section > article:nth-of-type(even) figure {
 
 	header p {
 		width: auto;
+	}
+
+	section > article {
+		width: auto;
+	}
+
+	section > article > figure {
+		width: auto;
+		height: auto;
+	}
+
+	section > article > figure > svg {
+		width: auto !important;
+		height: auto !important;
 	}
 
 }
