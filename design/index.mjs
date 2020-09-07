@@ -10,11 +10,16 @@ window.addEventListener('DOMContentLoaded', () => {
 		setTimeout(() => {
 
 			let box = header.getBoundingClientRect();
+			let padding = (window.innerHeight - box.height) / 2;
+			if (padding > 256) {
+				header.style['padding-top']    = padding + 'px';
+				header.style['padding-bottom'] = padding + 'px';
+			} else {
+				header.style['padding-top']    = null;
+				header.style['padding-bottom'] = null;
+			}
 
-			header.style['padding-top']    = ((window.innerHeight - box.height) / 2) + 'px';
-			header.style['padding-bottom'] = ((window.innerHeight - box.height) / 2) + 'px';
-
-		}, 0);
+		}, 100);
 
 	}
 

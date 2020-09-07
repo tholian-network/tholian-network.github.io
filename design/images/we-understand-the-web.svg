@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 512 256" xmlns="http://www.w3.org/2000/svg">
+	<rect fill="transparent" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" x="2" y="2" width="508" height="252"/>
+	<g>
+		<path fill="transparent" stroke="#ffffff" stroke-linejoin="round" stroke-width="4" d="M 64 32 A 32 32 0 0 0 64 96 A 32 32 0 0 0 96 64 l -32 0 l 0 -32z"/>
+		<path fill="transparent" stroke="#ffffff" stroke-linejoin="round" stroke-width="4" d="M 64 32 A 32 32 0 0 1 96 64 l -32 0 l 0 -32z"/>
+		<rect fill="#ffffff" x="120" y="36" width="64" height="8"/>
+		<rect fill="#ffffff" x="120" y="52" width="64" height="8"/>
+		<rect fill="#ffffff" x="120" y="68" width="64" height="8"/>
+		<rect fill="#ffffff" x="120" y="84" width="32" height="8"/>
+	</g>
+	<g>
+		<path fill="transparent" stroke="#ffffff" stroke-linejoin="round" stroke-width="4" d="M 64 160 A 32 32 0 0 0 64 224 l 0 -64z"/>
+		<path fill="transparent" stroke="#ffffff" stroke-linejoin="round" stroke-width="4" d="M 64 160 A 32 32 0 0 1 96 192 l -32 0 l 0 -32z"/>
+		<path fill="transparent" stroke="#ffffff" stroke-linejoin="round" stroke-width="4" d="M 96 192 A 32 32 0 0 1 64 224 l 0 -32 l 32 0z"/>
+		<rect fill="#ffffff" x="120" y="164" width="64" height="8"/>
+		<rect fill="#ffffff" x="120" y="180" width="64" height="8"/>
+		<rect fill="#ffffff" x="120" y="196" width="64" height="8"/>
+		<rect fill="#ffffff" x="120" y="212" width="32" height="8"/>
+	</g>
+	<g>
+		<rect fill="#ffffff" x="240" y="88" width="8" height="8"/>
+		<rect fill="#ffffff" x="256" y="80" width="8" height="16"/>
+		<rect fill="#ffffff" x="272" y="72" width="8" height="24"/>
+		<rect fill="#ffffff" x="288" y="64" width="8" height="32"/>
+		<rect fill="#ffffff" x="304" y="64" width="8" height="32"/>
+		<rect fill="#ffffff" x="320" y="72" width="8" height="24"/>
+		<rect fill="#ffffff" x="336" y="72" width="8" height="24"/>
+		<rect fill="#ffffff" x="352" y="80" width="8" height="16"/>
+		<rect fill="#ffffff" x="368" y="72" width="8" height="24"/>
+		<rect fill="#ffffff" x="384" y="64" width="8" height="32"/>
+		<rect fill="#ffffff" x="400" y="56" width="8" height="40"/>
+		<rect fill="#ffffff" x="416" y="48" width="8" height="48"/>
+		<rect fill="#ffffff" x="432" y="48" width="8" height="48"/>
+		<rect fill="#ffffff" x="448" y="32" width="8" height="64"/>
+		<rect fill="#ffffff" x="464" y="40" width="8" height="56"/>
+		<rect fill="#ffffff" x="480" y="56" width="8" height="40"/>
+	</g>
+	<g>
+		<path fill="transparent" stroke="#ffffff" stroke-linejoin="round" stroke-width="4" d="M 244 164 l 16 8 l 16 8 l 16 8 l 16 0 l 16 -8 l 16 0 l 16 -8 l 16 8 l 16 8 l 16 8 l 16 8 l 16 0 l 16 16 l 16 -8 l 16 -16"/>
+		<circle fill="transparent" stroke="#ffffff" stroke-width="4" cx="356" cy="172" r="8"/>
+		<circle fill="transparent" stroke="#ffffff" stroke-width="4" cx="452" cy="220" r="8"/>
+	</g>
+</svg>
+

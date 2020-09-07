@@ -1,38 +1,38 @@
 
-#we-uncover-the-web svg circle,
-#we-uncover-the-web svg path {
-	cursor: pointer;
+#we-uncover-the-web svg g circle,
+#we-uncover-the-web svg g path {
 	transition: 500ms all ease-out;
+	cursor: pointer;
 }
 
-#we-uncover-the-web svg:hover g:nth-of-type(1) path {
-	stroke: #22ccff;
-}
-
-#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(2) { transition-delay: 100ms; }
-#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(3) { transition-delay: 200ms; }
-#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(4) { transition-delay: 300ms; }
-#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(5) { transition-delay: 400ms; }
-#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(6) { transition-delay: 500ms; }
-#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(7) { transition-delay: 600ms; }
-#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(8) { transition-delay: 700ms; }
-#we-uncover-the-web svg:hover g:nth-of-type(1) path:nth-of-type(9) { transition-delay: 800ms; }
-
-#we-uncover-the-web svg:hover g:nth-of-type(2) circle {
+#we-uncover-the-web svg g:hover > g > circle {
 	fill: #22ccff;
-	transition-delay: 900ms;
 }
 
-#we-uncover-the-web svg:hover g:nth-of-type(2) path {
+#we-uncover-the-web svg g:hover > path,
+#we-uncover-the-web svg g:hover > g > path {
 	stroke: #22ccff;
-	transition-delay: 900ms;
 }
 
-#we-extract-the-web svg circle,
-#we-extract-the-web svg path,
-#we-extract-the-web svg rect {
-	cursor: pointer;
+#we-uncover-the-web svg g > path:nth-of-type(2) { transition-delay:  50ms; }
+#we-uncover-the-web svg g > path:nth-of-type(3) { transition-delay: 100ms; }
+#we-uncover-the-web svg g > path:nth-of-type(4) { transition-delay: 150ms; }
+#we-uncover-the-web svg g > path:nth-of-type(5) { transition-delay: 200ms; }
+#we-uncover-the-web svg g > path:nth-of-type(6) { transition-delay: 250ms; }
+#we-uncover-the-web svg g > path:nth-of-type(7) { transition-delay: 300ms; }
+#we-uncover-the-web svg g > path:nth-of-type(8) { transition-delay: 350ms; }
+#we-uncover-the-web svg g > path:nth-of-type(9) { transition-delay: 400ms; }
+#we-uncover-the-web svg g > g > circle          { transition-delay: 500ms; }
+#we-uncover-the-web svg g > g > path            { transition-delay: 500ms; }
+
+
+
+
+#we-extract-the-web svg g circle,
+#we-extract-the-web svg g path,
+#we-extract-the-web svg g rect {
 	transition: 500ms all ease-out;
+	cursor: pointer;
 }
 
 #we-extract-the-web svg g:hover circle {
@@ -51,5 +51,28 @@
 #we-extract-the-web svg g:hover rect[stroke] {
 	fill: transparent;
 	stroke: #22ccff;
+}
+
+
+
+#we-understand-the-web svg g circle,
+#we-understand-the-web svg g path,
+#we-understand-the-web svg g rect {
+	transition: 500ms all ease-out;
+	cursor: pointer;
+}
+
+#we-understand-the-web svg g:hover circle {
+	fill: #22ccff;
+	stroke: #22ccff;
+}
+
+#we-understand-the-web svg g:hover path {
+	fill: #22ccff;
+	stroke: #22ccff;
+}
+
+#we-understand-the-web svg g:hover rect {
+	fill: #22ccff;
 }
 

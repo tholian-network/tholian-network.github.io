@@ -53,13 +53,13 @@ aside a {
 }
 
 aside button[data-action="radar"] {
-	position: fixed;
+	display: inline-block;
+	position: absolute;
 	top: 16px;
 	right: 16px;
 	bottom: auto;
 	left: auto;
 	padding: 0px 8px;
-	content: 'Radar';
 	color: var(--element-active-color);
 }
 
@@ -67,6 +67,13 @@ aside button[data-action="radar"]:before {
 	display: inline;
 	margin: 0px 4px 0px 0px;
 	content: '\e8e1';
+	vertical-align: top;
+	line-height: 32px;
+}
+
+aside button[data-action="radar"]:after {
+	display: inline;
+	content: 'Radar';
 	vertical-align: top;
 	line-height: 32px;
 }
@@ -80,7 +87,7 @@ header {
 	box-sizing: content-box;
 }
 
-header img {
+header svg {
 	display: block;
 	width: 128px;
 	height: 128px;
@@ -129,8 +136,12 @@ header p:nth-of-type(1) {
 
 section > article {
 	width: 544px;
-	margin: 64px auto 256px auto;
+	margin: 256px auto 256px auto;
 	min-height: 288px;
+}
+
+section > article:nth-of-type(1) {
+	margin-top: 0px;
 }
 
 section > article > figure {
@@ -152,24 +163,24 @@ section > article figure > svg {
 }
 
 section > article:nth-of-type(odd) {
-	transform: translate(-50%);
+	transform: translate(calc(-50% - 16px));
 }
 
 section > article:nth-of-type(odd) > figure {
-	transform: translate(calc(100% + 32px), -49px);
+	transform: translate(calc(100% + 32px + 16px), -49px);
 }
 
 section > article:nth-of-type(even) {
-	transform: translate(50%);
+	transform: translate(calc(50% + 16px));
 }
 
 section > article:nth-of-type(even) > figure {
-	transform: translate(calc(-100% - 32px), -49px);
+	transform: translate(calc(-100% - 32px - 16px), -49px);
 }
 
 
 
-@media screen and (max-width: 1152px) {
+@media screen and (max-width: 1184px) {
 
 	section > article:nth-of-type(odd) {
 		transform: unset;
@@ -205,16 +216,21 @@ section > article:nth-of-type(even) > figure {
 	}
 
 	aside button[data-action="radar"] {
-		top: auto;
-		right: auto;
-		bottom: 0px;
-		left: 0px;
+		position: static;
+		top: unset;
+		right: unset;
+		bottom: unset;
+		left: unset;
 		background: var(--surface-default-foreground);
 		z-index: 1024;
 	}
 
 	aside button[data-action="radar"]:before {
 		margin: 0px;
+	}
+
+	aside button[data-action="radar"]:after {
+		display: none;
 	}
 
 	aside ul {
@@ -229,6 +245,7 @@ section > article:nth-of-type(even) > figure {
 
 	header p {
 		width: auto;
+		padding: 16px;
 	}
 
 	section > article {
@@ -243,6 +260,20 @@ section > article:nth-of-type(even) > figure {
 	section > article > figure > svg {
 		width: auto !important;
 		height: auto !important;
+	}
+
+}
+
+
+
+@media screen and (max-height: 800px) {
+
+	header {
+		padding: 64px 0px;
+	}
+
+	section > article {
+		margin: 128px auto 128px auto;
 	}
 
 }
