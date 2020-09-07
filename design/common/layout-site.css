@@ -18,6 +18,8 @@ aside {
 	background: var(--surface-default-foreground);
 	box-sizing: border-box;
 	z-index: 1024;
+	-webkit-overflow-scrolling: touch;
+	scroll-behavior: smooth;
 }
 
 main {
@@ -30,6 +32,27 @@ main {
 	padding: 0px;
 	overflow: scroll;
 	z-index: 0;
+	-webkit-overflow-scrolling: touch;
+	scroll-behavior: smooth;
+}
+
+#tholian,
+#tholian a,
+#tholian a:focus,
+#tholian a:hover,
+#tholian a img {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	border: none;
+	vertical-align: top;
+}
+
+#tholian {
+	margin-right: 16px;
 }
 
 aside ul {
@@ -44,12 +67,19 @@ aside ul li {
 	display: inline-block;
 }
 
-aside a {
+aside ul li a {
 	padding: 0px 4px;
 	font-family: 'crystalline';
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 32px;
+}
+
+aside ul li a.active {
+	color: var(--link-focus-color);
+	border: 1px solid var(--link-focus-color);
+	background: var(--link-focus-background);
+	outline: none;
 }
 
 aside button[data-action="radar"] {
@@ -59,6 +89,7 @@ aside button[data-action="radar"] {
 	right: 16px;
 	bottom: auto;
 	left: auto;
+	margin: 0px 16px;
 	padding: 0px 8px;
 	color: var(--element-active-color);
 }
@@ -140,7 +171,7 @@ section > article {
 	min-height: 288px;
 }
 
-section > article:nth-of-type(1) {
+section > header + article:nth-of-type(1) {
 	margin-top: 0px;
 }
 
