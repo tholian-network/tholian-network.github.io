@@ -27,7 +27,6 @@
 
 
 
-
 #we-extract-the-web svg g circle,
 #we-extract-the-web svg g path,
 #we-extract-the-web svg g rect {
@@ -49,6 +48,39 @@
 }
 
 #we-extract-the-web svg g:hover rect[stroke] {
+	fill: transparent;
+	stroke: #22ccff;
+}
+
+
+
+#we-automate-the-web svg g circle,
+#we-automate-the-web svg g rect,
+#we-automate-the-web svg g text {
+	transition: 400ms all ease-out;
+	cursor: pointer;
+}
+
+#we-automate-the-web svg g text {
+	font-family: 'crystalline';
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 32px;
+	stroke: #ffffff;
+	stroke-width: 1px;
+	transform: translate(0.5px, 1.5px);
+}
+
+#we-automate-the-web svg g:hover circle {
+	fill: #22ccff;
+	stroke: #22ccff;
+}
+
+#we-automate-the-web svg g:hover rect {
+	fill: #22ccff;
+}
+
+#we-automate-the-web svg g:hover rect[stroke] {
 	fill: transparent;
 	stroke: #22ccff;
 }
