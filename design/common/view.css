@@ -89,7 +89,7 @@ aside button[data-action="radar"] {
 	right: 16px;
 	bottom: auto;
 	left: auto;
-	margin: 0px 16px;
+	margin: 0px;
 	padding: 0px 8px;
 	color: var(--element-active-color);
 }
@@ -109,70 +109,50 @@ aside button[data-action="radar"]:after {
 	line-height: 32px;
 }
 
-header {
-	display: block;
-	width: 512px;
-	height: auto;
-	margin: 0px auto;
-	padding: 256px 0px;
-	box-sizing: content-box;
-}
-
-header svg {
-	display: block;
-	width: 128px;
-	height: 128px;
-	margin: 0px auto 32px auto;
-	padding: 0px;
-	border: 0px solid transparent;
-}
-
-header h1 {
-	display: block;
-	margin: 0px;
-	padding: 0px;
-	font-family: 'crystalline';
-	font-size: 48px;
-	font-weight: 500;
-	line-height: 64px;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-header h2 {
-	display: block;
-	margin: 0px;
-	padding: 0px;
-	font-family: 'crystalline';
-	font-size: 32px;
-	font-weight: 400;
-	line-height: 32px;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-header p {
-	display: block;
-	width: 512px;
-	margin: 0px auto 16px auto;
-	font-family: 'museo';
-	font-size: 20px;
-	font-weight: normal;
-	text-align: justify;
-}
-
-header p:nth-of-type(1) {
-	margin-top: 64px;
-}
-
 section > article {
 	width: 544px;
 	margin: 256px auto 256px auto;
 	min-height: 288px;
 }
 
-section > header + article:nth-of-type(1) {
-	margin-top: 0px;
+section > article code {
+	display: inline;
+	margin: 0px;
+	padding: 4px;
+	font-family: 'vera-mono';
+	color: var(--layout-default-color);
+	background: var(--layout-default-background);
+	border-radius: 4px;
+}
+
+section > article q {
+	display: inline;
+	margin: 0px;
+	padding: 4px;
+	font-family: 'vera-mono';
+	color: var(--layout-default-color);
+	background: var(--layout-default-background);
+	border-radius: 4px;
+}
+
+section > article q:before {
+	content: '';
+}
+
+section > article q:after {
+	content: '';
+}
+
+section > article ul {
+	display: block;
+	margin: 16px;
+	padding: 0px;
+}
+
+section > article ul li {
+	list-style-type: square;
+	line-height: 1.8em;
+	vertical-align: middle;
 }
 
 section > article > figure {
@@ -186,48 +166,16 @@ section > article > figure {
 	user-select: none;
 }
 
-section > article figure > svg {
+section > article > figure > svg {
 	display: block;
 	width: 512px;
 	height: 256px;
 	user-select: none;
 }
 
-section > article:nth-of-type(odd) {
-	transform: translate(calc(-50% - 16px));
-}
-
-section > article:nth-of-type(odd) > figure {
-	transform: translate(calc(100% + 32px + 16px), -49px);
-}
-
-section > article:nth-of-type(even) {
-	transform: translate(calc(50% + 16px));
-}
-
-section > article:nth-of-type(even) > figure {
-	transform: translate(calc(-100% - 32px - 16px), -49px);
-}
-
 
 
 @media screen and (max-width: 1184px) {
-
-	section > article:nth-of-type(odd) {
-		transform: unset;
-	}
-
-	section > article:nth-of-type(odd) > figure {
-		transform: unset;
-	}
-
-	section > article:nth-of-type(even) {
-		transform: unset;
-	}
-
-	section > article:nth-of-type(even) > figure {
-		transform: unset;
-	}
 
 	section > article > figure {
 		position: static;
@@ -252,6 +200,7 @@ section > article:nth-of-type(even) > figure {
 		right: unset;
 		bottom: unset;
 		left: unset;
+		margin: 0px 16px;
 		background: var(--surface-default-foreground);
 		z-index: 1024;
 	}
@@ -268,15 +217,6 @@ section > article:nth-of-type(even) > figure {
 		width: fit-content;
 		margin: 0px;
 		white-space: nowrap;
-	}
-
-	header {
-		width: auto;
-	}
-
-	header p {
-		width: auto;
-		padding: 16px;
 	}
 
 	section > article {
@@ -298,10 +238,6 @@ section > article:nth-of-type(even) > figure {
 
 
 @media screen and (max-height: 800px) {
-
-	header {
-		padding: 64px 0px;
-	}
 
 	section > article {
 		margin: 128px auto 128px auto;

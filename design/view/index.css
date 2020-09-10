@@ -1,4 +1,92 @@
 
+@import url("../common/index.css");
+@import url("../common/elements.css");
+@import url("../common/layout.css");
+@import url("../common/theme.css");
+@import url("../common/view.css");
+
+
+
+section > header {
+	display: block;
+	width: 512px;
+	height: auto;
+	margin: 0px auto;
+	padding: 256px 0px;
+	box-sizing: content-box;
+}
+
+section > header svg {
+	display: block;
+	width: 128px;
+	height: 128px;
+	margin: 0px auto 32px auto;
+	padding: 0px;
+	border: 0px solid transparent;
+}
+
+section > header h1 {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'crystalline';
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 64px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+section > header h2 {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'crystalline';
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 32px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+section > header p {
+	display: block;
+	width: 512px;
+	margin: 0px auto 16px auto;
+	font-family: 'museo';
+	font-size: 20px;
+	font-weight: normal;
+	text-align: justify;
+}
+
+section > header p:nth-of-type(1) {
+	margin-top: 64px;
+}
+
+section > header + article:nth-of-type(1) {
+	margin-top: 0px;
+}
+
+
+
+section > article:nth-of-type(odd) {
+	transform: translate(calc(-50% - 16px));
+}
+
+section > article:nth-of-type(odd) > figure {
+	transform: translate(calc(100% + 32px + 16px), -49px);
+}
+
+section > article:nth-of-type(even) {
+	transform: translate(calc(50% + 16px));
+}
+
+section > article:nth-of-type(even) > figure {
+	transform: translate(calc(-100% - 32px - 16px), -49px);
+}
+
+
+
 #we-uncover-the-web svg g circle,
 #we-uncover-the-web svg g path {
 	transition: 500ms all ease-out;
@@ -106,5 +194,52 @@
 
 #we-understand-the-web svg g:hover rect {
 	fill: #22ccff;
+}
+
+
+
+@media screen and (max-width: 1184px) {
+
+	section > article:nth-of-type(odd) {
+		transform: unset;
+	}
+
+	section > article:nth-of-type(odd) > figure {
+		transform: unset;
+	}
+
+	section > article:nth-of-type(even) {
+		transform: unset;
+	}
+
+	section > article:nth-of-type(even) > figure {
+		transform: unset;
+	}
+
+}
+
+
+
+@media screen and (max-width: 560px) {
+
+	section > header {
+		width: auto;
+	}
+
+	section > header p {
+		width: auto;
+		padding: 16px;
+	}
+
+}
+
+
+
+@media screen and (max-height: 800px) {
+
+	section > header {
+		padding: 64px 0px;
+	}
+
 }
 

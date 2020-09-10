@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 512 256" xmlns="http://www.w3.org/2000/svg">
+	<rect fill="transparent" stroke="#ffffff" stroke-linejoin="round" stroke-width="4" x="32" y="32" width="96" height="128"/>
+	<path stroke="#ffffff" stroke-dasharray="0 16" stroke-linecap="round" stroke-width="8" d="M 112 208 l 112.1 0"/>
+	<g>
+		<rect fill="transparent" stroke="#ffffff" stroke-linejoin="round" stroke-width="4" x="44" y="80" width="72" height="8"/>
+		<rect fill="#ffffff" x="98" y="96" width="20" height="8"/>
+		<circle fill="transparent" stroke="#ffffff" stroke-width="4" cx="80" cy="208" r="16"/>
+		<text fill="#ffffff" x="80" y="208" alignment-baseline="middle" text-anchor="middle">1</text>
+	</g>
+	<rect fill="transparent" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" x="208" y="32" width="96" height="128"/>
+	<path stroke="#ffffff" stroke-dasharray="0 16" stroke-linecap="round" stroke-width="8" d="M 288 208 l 112.1 0"/>
+	<rect fill="transparent" stroke="#ffffff" stroke-linejoin="round" stroke-width="4" x="220" y="56" width="72" height="80"/>
+	<rect fill="#ffffff" x="228" y="64" width="56" height="8"/>
+	<rect fill="#ffffff" x="228" y="80" width="56" height="8"/>
+	<rect fill="#ffffff" x="228" y="96" width="56" height="8"/>
+	<rect fill="#ffffff" x="228" y="120" width="20" height="8"/>
+	<g>
+		<rect fill="#ffffff" x="264" y="120" width="20" height="8"/>
+		<circle fill="transparent" stroke="#ffffff" stroke-width="4" cx="256" cy="208" r="16"/>
+		<text fill="#ffffff" x="256" y="208" alignment-baseline="middle" text-anchor="middle">2</text>
+	</g>
+	<rect fill="transparent" stroke="#ffffff" stroke-linejoin="round" stroke-width="4" x="384" y="32" width="96" height="128"/>
+	<g>
+		<rect fill="#ffffff" x="392" y="44" width="80" height="16"/>
+		<rect fill="#ffffff" x="392" y="76" width="80" height="8"/>
+		<rect fill="#ffffff" x="392" y="92" width="80" height="8"/>
+		<rect fill="#ffffff" x="392" y="108" width="80" height="8"/>
+		<rect fill="#ffffff" x="392" y="124" width="80" height="8"/>
+		<rect fill="#ffffff" x="392" y="140" width="40" height="8"/>
+		<circle fill="transparent" stroke="#ffffff" stroke-width="4" cx="432" cy="208" r="16"/>
+		<text stroke="#ffffff" x="432" y="208" alignment-baseline="middle" text-anchor="middle">3</text>
+	</g>
+</svg>
+

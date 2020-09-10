@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Security-Policy" content="worker-src 'self'; script-src 'self' 'unsafe-inline'; frame-src 'self'">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tholian Network - Roadmap</title>
+		<link rel="stylesheet" href="design/view/roadmap.css">
+		<link rel="shortcut icon" href="design/common/tholian.ico">
+		<link rel="icon" type="image/svg+xml" sizes="any" href="design/common/tholian.svg">
+	</head>
+	<body>
+		<aside>
+			<ul>
+				<li id="tholian"><a href="https://tholian.network/index.html"><img width="32" height="32" src="design/common/tholian.svg"/></a></li>
+				<li><a title="About Us" href="/index.html">About</a></li>
+				<li><a title="Our Products" href="/products.html">Products</a></li>
+				<li><a title="Roadmap" href="/roadmap.html">Roadmap</a></li>
+				<li><a title="Contact Us" href="/contact.html">Contact</a></li>
+				<li><button data-action="radar" title="Login to Radar"></button></li>
+			</ul>
+		</aside>
+		<main>
+			<section id="roadmap">
+				<article>
+					<h3>Q1 2021 - Stealth Private Alpha</h3>
+					<p>
+						The Private Alpha of Stealth will be relased in Q1 2021.
+					</p>
+					<p>
+						This release will focus on the core UI/UX of the Browser
+						in order to enable a safe way to filter out malicious parts
+						of the Web by modifying the content before it reaches the
+						User-Agent.
+						<br><br>
+						The following features are going to be part of it:
+					</p>
+					<ul>
+						<li><q>Site Optimizers</q> to allow optimization of content</li>
+						<li><q>CSS Parser</q> to filter out privacy-compromising CSS</li>
+						<li><q>HTML Parser</q> to filter out privacy-compromising HTML</li>
+						<li><q>Beacons</q> to allow extraction of content</li>
+						<li><code>stealth:history</code> Page</li>
+						<li><code>stealth:media</code> Page</li>
+						<li><code>stealth:search</code> Page</li>
+					</ul>
+				</article>
+				<figure>
+					<svg version="1.1" viewBox="0 0 64 256">
+						<path stroke="#ffffff" stroke-dasharray="0 16" stroke-linecap="round" stroke-width="8" d="M 32 16 l 0 192.1"/>
+						<polygon fill="#ffffff" stroke="#ffffff" stroke-linejoin="round" stroke-width="8" points="20,224 44,224 32,240"/>
+					</svg>
+				</figure>
+				<article>
+					<h3>Q3 2021 - Radar Private Alpha</h3>
+					<p>
+						The Private Alpha of Radar will be released in Q3 2021.
+					</p>
+					<p>
+						Radar will be the Knowledge Tracker that allows to share
+						Beacons and Echoes with other Stealth instances on the Web.
+						<br><br>
+						The following features are going to be part of it:
+					</p>
+					<ul>
+						<li>Global Censorship Index (by Country and ISP)</li>
+						<li>Sharing of <q>Beacons</q> with connected Peers</li>
+						<li>Sharing of <q>Echoes</q> with connected Peers</li>
+						<li>Sharing of <q>Hosts</q> with connected Peers (as a decentralized cache for DNS)</li>
+					</ul>
+				</article>
+				<figure>
+					<svg version="1.1" viewBox="0 0 64 256">
+						<path stroke="#ffffff" stroke-dasharray="0 16" stroke-linecap="round" stroke-width="8" d="M 32 16 l 0 192.1"/>
+						<polygon fill="#ffffff" stroke="#ffffff" stroke-linejoin="round" stroke-width="8" points="20,224 44,224 32,240"/>
+					</svg>
+				</figure>
+				<article>
+					<h3>Q4 2021 - Radar Public Alpha</h3>
+					<p>
+						The Public Alpha of Radar will be released in Q4 2021.
+					</p>
+					<p>
+						This release will focus on Security Enhancements by implementing
+						an automated way to distribute Intermediary Certificates that
+						allow peer-to-peer TLS encryption.
+						<br><br>
+						The following features are going to be part of it:
+					</p>
+					<ul>
+						<li>Root Certificate for <code>radar.tholian.network</code></li>
+						<li>Cross-Signing Web Service for <code>[username].radar.tholian.network</code></li>
+						<li>Registration Service for Users (based on HOTP session tokens and local private keys)</li>
+						<li>Global Index for most popular Beacons</li>
+						<li>Global Index for most popular Echoes</li>
+						<li>Global Index for similar Sites (based on Beacons and content)</li>
+					</ul>
+				</article>
+				<figure>
+					<svg version="1.1" viewBox="0 0 64 256">
+						<path stroke="#ffffff" stroke-dasharray="0 16" stroke-linecap="round" stroke-width="8" d="M 32 16 l 0 192.1"/>
+						<polygon fill="#ffffff" stroke="#ffffff" stroke-linejoin="round" stroke-width="8" points="20,224 44,224 32,240"/>
+					</svg>
+				</figure>
+				<article>
+					<h3>Q2 2022 - Stealth Public Beta</h3>
+					<p>
+						The Public Beta of Stealth will be released in Q1 2022.
+					</p>
+					<p>
+						This release will focus on <q>Site Optimizers</q> and <q>Echoes</q> in order to
+						allow users to record and share their interactions and navigations on Sites.
+						<br><br>
+						The following features are going to be part of it:
+					</p>
+					<ul>
+						<li>Recording of <q>Echoes</q> via User Interface</li>
+						<li>Sharing of <q>Echoes</q> with connected Peers</li>
+						<li>Site Exporters to exports of a Site's data (via <q>CSV</q>, <q>JSON</q> or <q>XML</q>)</li>
+						<li>Image Optimizers (via <q>optipng</q>, <q>libjpeg-turbo</q>, <q>convert</q>)</li>
+						<li>Video Optimizers (via <q>ffmpeg</q>)</li>
+						<li>Better Site Optimizers to auto-upgrade HTML5 content</li>
+					</ul>
+				</article>
+			</section>
+			<footer>
+				&copy; 2019-2020 Tholian&reg; Network. Tholian is a registered trademark under European Law.
+			</footer>
+		</main>
+		<script type="module" src="design/index.mjs"></script>
+	</body>
+</html>
