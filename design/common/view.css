@@ -65,6 +65,12 @@ aside ul {
 
 aside ul li {
 	display: inline-block;
+	margin: 0px 8px 0px 0px;
+	padding: 0px;
+}
+
+aside ul li:last-child {
+	margin-right: 0px;
 }
 
 aside ul li a {

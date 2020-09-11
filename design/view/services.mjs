@@ -9,10 +9,27 @@ window.addEventListener('DOMContentLoaded', () => {
 			plan.addEventListener('mouseover', () => {
 
 				plans.forEach((other) => {
-					other.className = '';
+					other.className = (other === plan) ? 'active' : '';
 				});
 
-				plan.className = 'active';
+			});
+
+		});
+
+	}
+
+	let buttons = Array.from(window.document.querySelectorAll('button[data-action="register"]'));
+	if (buttons.length > 0) {
+
+		buttons.forEach((button) => {
+
+			button.addEventListener('click', () => {
+
+				let plan = button.getAttribute('data-plan');
+				let PLANS = [ 'private', 'lieutenant', 'commander', 'admiral' ];
+				if (PLANS.includes(plan) === true) {
+					window.location.href = 'https://radar.tholian.network/register.html?plan=' + plan;
+				}
 
 			});
 
@@ -21,3 +38,4 @@ window.addEventListener('DOMContentLoaded', () => {
 	}
 
 });
+

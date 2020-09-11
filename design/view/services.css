@@ -11,7 +11,7 @@ section > article {
 	min-height: unset;
 }
 
-section > article:nth-of-type(2) {
+section > article:nth-of-type(1) {
 	margin-bottom: 0px;
 }
 
@@ -28,7 +28,7 @@ section > article#commercial-plans > div {
 	display: inline-block;
 	position: relative;
 	width: 260px;
-	min-height: 352px;
+	min-height: 320px;
 	margin: 0px 16px 0px 0px;
 	padding: 8px;
 	background: var(--surface-default-background);
@@ -63,13 +63,44 @@ section > article#commercial-plans button[data-action="register"] {
 
 section > article#commercial-plans > div:hover,
 section > article#commercial-plans > div.active {
-	min-height: 356px;
-	transform: translate(0px, -4px);
+	transform: translate(0px, -4px) scale(1.02, 1.02);
 	border: 2px solid var(--element-active-color);
 }
 
 section > article#commercial-plans > div:hover button[data-action="register"],
 section > article#commercial-plans > div.active button[data-action="register"] {
 	color: var(--element-active-color);
+}
+
+
+
+@media screen and (max-width: 1184px) {
+
+	section > article#commercial-plans > div,
+	section > article#commercial-plans > div:last-child {
+		display: block;
+		width: 544px;
+		height: auto;
+		min-height: auto;
+		margin: 32px auto;
+	}
+
+	section > article#commercial-plans > div:hover,
+	section > article#commercial-plans > div.active {
+		transform: unset;
+		border: 2px solid var(--element-active-color);
+	}
+
+}
+
+
+
+@media screen and (max-width: 560px) {
+
+	section > article#commercial-plans > div,
+	section > article#commercial-plans > div:last-child {
+		width: auto;
+	}
+
 }
 
