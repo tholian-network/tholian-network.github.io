@@ -122,6 +122,7 @@ section > article code {
 	font-family: 'vera-mono';
 	color: var(--layout-default-color);
 	background: var(--layout-default-background);
+	white-space: nowrap;
 	border-radius: 4px;
 }
 
@@ -132,14 +133,17 @@ section > article q {
 	font-family: 'vera-mono';
 	color: var(--layout-default-color);
 	background: var(--layout-default-background);
+	white-space: nowrap;
 	border-radius: 4px;
 }
 
 section > article q:before {
+	display: none;
 	content: '';
 }
 
 section > article q:after {
+	display: none;
 	content: '';
 }
 
@@ -155,7 +159,7 @@ section > article ul:last-child {
 
 section > article ul li {
 	list-style-type: square;
-	line-height: 1.8em;
+	line-height: 1.6em;
 	vertical-align: middle;
 }
 

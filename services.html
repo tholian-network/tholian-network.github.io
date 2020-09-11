@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Security-Policy" content="worker-src 'self'; script-src 'self' 'unsafe-inline'; frame-src 'self'">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tholian Network - Our Services</title>
+		<link rel="stylesheet" href="design/view/services.css">
+		<link rel="shortcut icon" href="design/common/tholian.ico">
+		<link rel="icon" type="image/svg+xml" sizes="any" href="design/common/tholian.svg">
+	</head>
+	<body>
+		<aside>
+			<ul>
+				<li id="tholian"><a href="https://tholian.network/index.html"><img width="32" height="32" src="design/common/tholian.svg"/></a></li>
+				<li><a title="About Us" href="/index.html">About</a></li>
+				<li><a title="Our Products" href="/products.html">Products</a></li>
+				<li><a title="Our Services" href="/services.html">Services</a></li>
+				<li><a title="Roadmap" href="/roadmap.html">Roadmap</a></li>
+				<li><a title="Contact Us" href="/contact.html">Contact</a></li>
+				<li><button data-action="radar" title="Login to Radar"></button></li>
+			</ul>
+		</aside>
+		<main>
+			<section>
+				<article>
+					<h3>Private Usage</h3>
+					<p>
+						Private Usage (of Stealth and Radar) is free for everyone, but has a ratio of <q>Beacons</q> and <q>Echoes</q>
+						that users need to contribute to the public <a href="https://radar.tholian.network">Radar of Tholian Network</a>.
+						<br><br>
+						That ratio depends on the health status of the Network. Currently, the minimum ratio is around <q>1/100</q> that
+						need to be contributed by free users in order to continue access to the public Radar's Knowledge.
+					</p>
+				</article>
+				<article>
+					<h3>Commercial Usage</h3>
+					<p>
+						Commercial Plans allow users to use <q>Beacons</q> and <q>Echoes</q> from the public
+						<a href="https://radar.tholian.network">Radar of Tholian Network</a> with a higher volume than allowed for Private Usage.
+						<br><br>
+						After the amount included in the volume is reached, the minimum ratio of required contributions applies.
+					</p>
+				</article>
+				<article id="commercial-plans">
+					<div>
+						<h3>Private</h3>
+						<ul>
+							<li>No Commercial Usage allowed</li>
+							<li>100 included <q>Beacons</q> or <q>Echoes</q> / month</li>
+						</ul>
+						<button data-action="register" data-plan="private">free</button>
+					</div>
+					<div class="active">
+						<h3>Lieutenant</h3>
+						<ul>
+							<li>Commercial Usage allowed</li>
+							<li>1000 included <q>Beacons</q> or <q>Echoes</q> / month</li>
+							<li>Unique Peer ID</li>
+							<li>Peer-to-Peer TLS</li>
+							<li>Export to CSV file</li>
+						</ul>
+						<button data-action="register" data-plan="lieutenant">50.00 &euro; / month</button>
+					</div>
+					<div>
+						<h3>Commander</h3>
+						<ul>
+							<li>Commercial Usage allowed</li>
+							<li>10000 included <q>Beacons</q> or <q>Echoes</q> / month</li>
+							<li>Unique Peer ID</li>
+							<li>Peer-to-Peer TLS</li>
+							<li>Export to CSV file</li>
+							<li>Export to SQL database</li>
+						</ul>
+						<button data-action="register" data-plan="commander">250.00 &euro; / month</button>
+					</div>
+					<div>
+						<h3>Admiral</h3>
+						<ul>
+							<li>Commercial Usage allowed</li>
+							<li>Unlimited <q>Beacons</q> or <q>Echoes</q> / month</li>
+							<li>Unique Peer ID</li>
+							<li>Peer-to-Peer TLS</li>
+							<li>Export to CSV file</li>
+							<li>Export to SQL database</li>
+							<li>Possible On-Premise Radar Hosting</li>
+						</ul>
+						<button data-action="register" data-plan="admiral">2000.00 &euro; / month</button>
+					</div>
+				</article>
+			</section>
+			<footer>
+				&copy; 2019-2020 Tholian&reg; Network. Tholian is a registered trademark under European Law.
+			</footer>
+		</main>
+		<script type="module" src="design/index.mjs"></script>
+		<script type="module" src="design/view/services.mjs"></script>
+	</body>
+</html>
