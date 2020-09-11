@@ -62,5 +62,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	}
 
+	let button = window.document.querySelector('button[data-action="radar"]');
+	if (button !== null) {
+		button.parentNode.removeChild(button);
+	}
+
 });
 

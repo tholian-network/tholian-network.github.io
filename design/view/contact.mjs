@@ -152,6 +152,7 @@
 							try {
 								response = JSON.parse(xhr.responseText);
 							} catch (err) {
+								response = null;
 							}
 
 							if (response instanceof Object) {
@@ -163,6 +164,7 @@
 										window.localStorage.setItem('issue', issue);
 										ISSUE = window.localStorage.getItem('issue');
 									} catch (err) {
+										ISSUE = null;
 									}
 
 									message.innerHTML = 'Your message was received as issue <q>#' + issue + '</q>.';
