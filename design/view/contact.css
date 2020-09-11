@@ -1,0 +1,65 @@
+
+@import url("../common/index.css");
+@import url("../common/elements.css");
+@import url("../common/layout.css");
+@import url("../common/theme.css");
+@import url("../common/view.css");
+
+
+
+section > article a {
+	text-decoration: none;
+}
+
+section > article a[href^="https://"]:before {
+	display: inline;
+	margin: 0px 4px 0px 0px;
+	padding: 0px;
+	font-family: 'icon';
+	line-height: 1.2em;
+	content: '\e89e';
+	vertical-align: top;
+}
+
+section > article code {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+section > article code[data-name="message"]:empty {
+	display: none;
+}
+
+section > article input {
+	display: block;
+	width: 100%;
+}
+
+section > article textarea {
+	display: block;
+	width: 100%;
+	resize: vertical;
+	background: var(--surface-default-foreground);
+}
+
+section > article div {
+	margin: 32px 0px 0px 0px;
+}
+
+section > article div:last-of-type {
+	text-align: right;
+}
+
+button[data-action="send"] {
+	padding: 0px 8px;
+}
+
+button[data-action="send"]:before {
+	display: inline;
+	width: auto;
+	margin: 0px 8px 0px 0px;
+	content: '\e163';
+	vertical-align: top;
+}
+

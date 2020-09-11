@@ -9,6 +9,7 @@
 
 section > article {
 	margin: 0px auto;
+	min-height: unset;
 }
 
 section > article:nth-of-type(1) {

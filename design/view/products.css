@@ -5,3 +5,24 @@
 @import url("../common/theme.css");
 @import url("../common/view.css");
 
+
+
+section > article {
+	min-height: unset;
+}
+
+section > article a[href^="https://"]:before {
+	display: inline;
+	margin: 0px 4px 0px 0px;
+	padding: 0px;
+	font-family: 'icon';
+	line-height: 1.2em;
+	content: '\e89e';
+	vertical-align: top;
+}
+
+section > article div {
+	margin-top: 32px;
+	text-align: right;
+}
+

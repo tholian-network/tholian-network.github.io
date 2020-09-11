@@ -64,6 +64,10 @@ section > article p {
 	text-align: justify;
 }
 
+section > article p:last-child {
+	margin-bottom: 0px;
+}
+
 section > article code {
 	display: block;
 	margin: 0px;

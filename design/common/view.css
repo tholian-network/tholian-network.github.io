@@ -149,6 +149,10 @@ section > article ul {
 	padding: 0px;
 }
 
+section > article ul:last-child {
+	margin-bottom: 0px;
+}
+
 section > article ul li {
 	list-style-type: square;
 	line-height: 1.8em;

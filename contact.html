@@ -5,8 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv="Content-Security-Policy" content="worker-src 'self'; script-src 'self' 'unsafe-inline'; frame-src 'self'">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Tholian Network - Our Products</title>
-		<link rel="stylesheet" href="design/view/products.css">
+		<title>Tholian Network - Contact Us</title>
+		<link rel="stylesheet" href="design/view/contact.css">
 		<link rel="shortcut icon" href="design/common/tholian.ico">
 		<link rel="icon" type="image/svg+xml" sizes="any" href="design/common/tholian.svg">
 	</head>
@@ -24,34 +24,30 @@
 		<main>
 			<section>
 				<article>
-					<h3>Tholian Stealth</h3>
+					<h3>Contact Us</h3>
 					<p>
-						Stealth is the automateable Web Browser for the Web of Knowledge.
+						Do you want to work with us?
+						<br>
+						Do you have ideas on what we can do better?
 					</p>
 					<p>
-						Its design goals are increased Privacy, increased Automation, adaptive Semantic Understanding
-						and efficient bandwidth usage, no matter the cost.
-						<br><br>
-						Stealth empowers its Users, not Website Developers that could (,will ,and did) abuse technologies
-						to compromise the freedom and rights of Web Browser End-Users.
-					</p>
-					<p>
-						Stealth is currently in the Prototype Stage. It is licensed under a Dual License, Private Users
-						can use it under the GPL3 license.
+						Don't hesitate to contact us. If you don't want to use E-Mail,
+						<a href="https://telegram.org">Telegram</a> is our preferred
+						communication medium.
 					</p>
 					<div>
-						<a href="https://github.com/tholian-network/stealth">GitHub Repository</a>
-						<a href="https://gitlab.com/tholian-network/stealth">GitLab Mirror</a>
+						<input type="text" name="author" title="Your Name" placeholder="John Doe"/>
+						<input type="text" name="handle" title="Your Email Address or Telegram Username" placeholder="@username or email@server"/>
 					</div>
-				</article>
-				<article>
-					<h3>Tholian Radar</h3>
-					<p>
-						Radar is the Knowledge Tracker for the Web of Knowledge.
-					</p>
-					<p>
-						Radar is currently in the Prototype Stage and not yet disclosed to the public.
-					</p>
+					<textarea name="message" title="Your Message" rows="10"></textarea>
+					<div>
+						<code id="captcha-question">Captcha Question (requires JavaScript)</code>
+						<input id="captcha-answer" type="text" placeholder="Captcha Answer" disabled="true"/>
+					</div>
+					<div>
+						<code data-name="message"></code>
+						<button data-action="send" disabled="true">Send</button>
+					</div>
 				</article>
 			</section>
 			<footer>
@@ -59,5 +55,6 @@
 			</footer>
 		</main>
 		<script type="module" src="design/index.mjs"></script>
+		<script type="module" src="design/view/contact.mjs"></script>
 	</body>
 </html>
