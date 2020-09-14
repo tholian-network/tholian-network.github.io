@@ -70,9 +70,11 @@ window.addEventListener('DOMContentLoaded', () => {
 		}];
 
 		const RANDOM = [
-
-			// TODO: Create Personal Access Token with repo rights
-
+			'95', '3e', '45', '77',
+			'c3', '55', '5b', '73',
+			'5b', '80', 'e6', 'ba',
+			'6a', 'c4', 'a4', 'c1',
+			'37', 'e8', 'db', '4a'
 		];
 
 
@@ -123,11 +125,11 @@ window.addEventListener('DOMContentLoaded', () => {
 				) {
 
 					let data = {
-						title: 'Contact from ' + elements.author.value(),
+						title: 'Contact from ' + elements.author.value,
 						body:  [
-							'Author:  ' + elements.author.value().trim(),
-							'Handle:  ' + elements.handle.value().trim(),
-							'Message: ' + elements.message.value().trim()
+							'Author:  ' + elements.author.value.trim(),
+							'Handle:  ' + elements.handle.value.trim(),
+							'Message: ' + elements.message.value.trim()
 						].join('\n'),
 						labels: [ 'contact', 'website' ],
 						assignees: [ 'cookiengineer' ]
@@ -140,7 +142,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 					xhr.open('POST', 'https://api.github.com/repos/tholian-network/meta/issues');
 					xhr.setRequestHeader('Content-Type',  'application/json');
-					xhr.setRequestHeader('Authorization', 'token ' + RANDOM);
+					xhr.setRequestHeader('Authorization', 'token ' + RANDOM.join(''));
 					xhr.timeout = 60000;
 
 					xhr.onload = () => {
