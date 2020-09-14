@@ -122,6 +122,9 @@ window.addEventListener('DOMContentLoaded', () => {
 				if (
 					ISSUE === null
 					&& button.getAttribute('disabled') === null
+					&& elements.author.value.trim().length > 5
+					&& elements.handle.value.trim().length > 5
+					&& elements.message.value.trim().length > 64
 				) {
 
 					let data = {
@@ -143,7 +146,7 @@ window.addEventListener('DOMContentLoaded', () => {
 					xhr.open('POST', 'https://api.github.com/repos/tholian-network/meta/issues');
 					xhr.setRequestHeader('Content-Type',  'application/json');
 					xhr.setRequestHeader('Authorization', 'token ' + RANDOM.join(''));
-					xhr.timeout = 60000;
+					xhr.timeout = 10000;
 
 					xhr.onload = () => {
 
@@ -155,9 +158,9 @@ window.addEventListener('DOMContentLoaded', () => {
 							response = null;
 						}
 
-						if (response instanceof Object) {
+						if (response !== null) {
 
-							let issue = data.number || null;
+							let issue = response.number || null;
 							if (issue !== null) {
 
 								try {
@@ -168,6 +171,13 @@ window.addEventListener('DOMContentLoaded', () => {
 								}
 
 								message.innerHTML = 'Your message was received as issue <q>#' + issue + '</q>.';
+
+								elements.author.parentNode.removeChild(elements.author);
+								elements.handle.parentNode.removeChild(elements.handle);
+								elements.message.parentNode.removeChild(elements.message);
+								question.parentNode.removeChild(question);
+								answer.parentNode.removeChild(answer);
+								button.parentNode.removeChild(button);
 
 							}
 
@@ -184,6 +194,24 @@ window.addEventListener('DOMContentLoaded', () => {
 					};
 
 					xhr.send(blob);
+
+				} else {
+
+					try {
+						window.localStorage.setItem('issue', 1337);
+						ISSUE = window.localStorage.getItem('issue');
+					} catch (err) {
+						ISSUE = null;
+					}
+
+					message.innerHTML = 'Sorry, l33t h4xx0rs should apply otherwise. Go find the clue, or hack the gibson instead.';
+
+					elements.author.parentNode.removeChild(elements.author);
+					elements.handle.parentNode.removeChild(elements.handle);
+					elements.message.parentNode.removeChild(elements.message);
+					question.parentNode.removeChild(question);
+					answer.parentNode.removeChild(answer);
+					button.parentNode.removeChild(button);
 
 				}
 

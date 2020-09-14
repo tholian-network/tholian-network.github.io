@@ -24,6 +24,8 @@ section > article a[href^="https://"]:before {
 section > article code {
 	display: block;
 	width: 100%;
+	text-align: center;
+	white-space: normal;
 	box-sizing: border-box;
 }
 
