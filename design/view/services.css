@@ -57,6 +57,7 @@ section > article#commercial-plans button[data-action="register"] {
 	left: auto;
 	margin: 0px;
 	padding: 0px 8px;
+	font-size: 16px;
 	border: 1px solid var(--element-default-color);
 	background: var(--surface-default-background);
 }
@@ -70,6 +71,94 @@ section > article#commercial-plans > div.active {
 section > article#commercial-plans > div:hover button[data-action="register"],
 section > article#commercial-plans > div.active button[data-action="register"] {
 	color: var(--element-active-color);
+}
+
+
+
+dialog {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	background: rgba(0,0,0,0.75);
+	z-index: 1024;
+	transform: translate(0%, -100%);
+	transition: all 250ms ease-out;
+}
+
+dialog[open] {
+	transform: translate(0%, 0%);
+}
+
+dialog > article {
+	display: block;
+	position: fixed;
+	top: 50%;
+	right: auto;
+	bottom: auto;
+	left: 50%;
+	width: 544px;
+	margin: 0px auto 0px auto;
+	padding: 16px;
+	font-family: 'museo';
+	font-size: 16px;
+	color: var(--layout-default-color);
+	background: var(--surface-default-foreground);
+	border: 1px solid var(--surface-default-color);
+	border-radius: 8px;
+	box-sizing: border-box;
+	transform: translate(-50%, -50%);
+}
+
+dialog > article button[data-action="close"] {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: auto;
+	left: auto;
+}
+
+dialog > article button[data-action="close"]:before {
+	content: '\e5cd';
+}
+
+dialog > article button[data-action="send"] {
+	font-size: 16px;
+	padding: 0px 8px;
+}
+
+dialog > article button[data-action="send"]:before {
+	content: '\e163';
+	margin: 0px 4px 0px 0px;
+}
+
+dialog > article h3 {
+	margin: 0px 0px 16px 0px;
+	padding: 0px;
+	font-family: 'crystalline';
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 32px;
+	text-transform: uppercase;
+	border-bottom: 1px solid var(--surface-default-color);
+}
+
+dialog > article p {
+	margin: 0px 0px 16px 0px;
+	font-family: 'museo';
+	font-size: 16px;
+	text-align: justify;
+}
+
+dialog > article div {
+	text-align: center;
 }
 
 
@@ -100,6 +189,12 @@ section > article#commercial-plans > div.active button[data-action="register"] {
 	section > article#commercial-plans > div,
 	section > article#commercial-plans > div:last-child {
 		width: auto;
+	}
+
+	dialog > article {
+		width: auto;
+		left: auto;
+		transform: translate(0%, -50%);
 	}
 
 }
