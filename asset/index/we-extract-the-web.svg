@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg version="1.1" viewBox="0 0 512 256" xmlns="http://www.w3.org/2000/svg">
+	<rect fill="#000000" x="0" y="0" width="512" height="256"/>
 	<rect fill="transparent" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" x="160" y="2" width="192" height="252"/>
 	<g>
 		<rect fill="#ffffff" x="176" y="24" width="160" height="16"/>
