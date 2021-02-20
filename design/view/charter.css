@@ -1,0 +1,35 @@
+
+@import url("../common/index.css");
+@import url("../common/elements.css");
+@import url("../common/layout.css");
+@import url("../common/theme.css");
+@import url("../common/view.css");
+
+
+
+section > article {
+	width: 640px;
+	min-height: unset;
+	margin: 64px auto 64px;
+}
+
+section > article a[href^="https://"]:before {
+	display: inline;
+	margin: 0px 4px 0px 0px;
+	padding: 0px;
+	font-family: 'icon';
+	line-height: 1.2em;
+	content: '\e89e';
+	vertical-align: top;
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+	section > article {
+		width: auto;
+	}
+
+}
+
