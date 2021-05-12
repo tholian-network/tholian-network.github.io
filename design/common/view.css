@@ -55,6 +55,24 @@ main {
 	margin-right: 16px;
 }
 
+#nomnom {
+	position: fixed;
+	display: block;
+	width: auto;
+	height: auto;
+	margin: 0px;
+	padding: 16px;
+	top: auto;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	font-family: 'vera-mono';
+	font-size: 16px;
+	text-align: center;
+	color: var(--layout-default-color);
+	background: var(--layout-default-background);
+}
+
 aside ul {
 	display: block;
 	margin: 0px 128px 0px 0px;

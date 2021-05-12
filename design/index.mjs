@@ -67,5 +67,14 @@ window.addEventListener('DOMContentLoaded', () => {
 		button.parentNode.removeChild(button);
 	}
 
+	let nomnom = window.document.querySelector('div#nomnom');
+	if (nomnom !== null) {
+
+		nomnom.addEventListener('click', () => {
+			nomnom.parentNode.removeChild(nomnom);
+		});
+
+	}
+
 });
 
